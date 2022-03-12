@@ -1,0 +1,232 @@
+<!DOCTYPE html>
+<html lang="en" class="">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@200;400;600;700;900&display=swap" rel="stylesheet">
+    <script src="https://cdn.tailwindcss.com"></script>
+    <title>Belajar Tailwind</title>
+    <script>
+        tailwind.config = {
+            darkMode: 'class',
+            theme: {
+                extend: {
+                    spacing: {
+                        13: '3.25rem',
+                    },
+                    fontFamily: {
+                        inter: ['Inter'],
+                    },
+                    colors: {
+                        bms: '#bada55',
+                        kopi: '#c0ffee',
+                    },
+                    animation: {
+                        'spin-slow': 'spin 3s linear infinite',
+                        'goyang': 'goyang 1s ease-in-out infinite',
+                    },
+                    keyframes: {
+                        goyang: {
+                            '0, 100%': {
+                                transform: 'rotate(-3deg)'
+                            },
+                            '50%': {
+                                transform: 'rotate(3deg)'
+                            },
+                        },
+                    },
+                },
+            },
+        };
+    </script>
+    <style type="text/tailwindcss">
+        #toogle:checked ~ label div.toogle-circle { @apply translate-x-3 }
+    </style>
+</head>
+<div class="dark:bg-slate-800 dark:text-slate-200">
+    <h1 class="text-8xl font-bold text-center my-10">Hallo Jelly,<br><span class="bg-gradient-to-r from-blue-500 to-teal-400 bg-clip-text text-transparent">Maafin Panda </span> <br>&#128536;&#128536;&#128536;</h1>
+
+    <section class="mb-10 bg-gradient-to-r from-indigo-200 via-red-400 to-yellow-300">
+        <h2 class="text-3xl text-center">Jellykuu Yang Paling Cantik</h2>
+        <div class="m-10">Yang paling sabar, paling cantik, paling baik, paling tulus, yang paling sayang sama panda, yang ngertiin panda, yang selalu support panda</div>
+        <div class="p-10">Panda Jelek, tapi Panda sayang sama jelly beneran tau. Love youu Jellyyyy &hearts;&hearts;&hearts;&hearts;&hearts;&hearts;&hearts;&hearts;&hearts;&hearts;&hearts;&hearts;&hearts;&hearts;&hearts;&hearts;&hearts;&hearts;&hearts;&hearts;&hearts;&hearts;&hearts;&hearts;&hearts;&hearts;&hearts;&hearts;&hearts;&hearts;&hearts;</div>
+    </section>
+
+    <section class="mb-10 bg-green-600">
+        <h2 class="text-3xl text-center">BARINA</h2>
+        <div class="w-32 h-32 bg-kopi">&nbsp;Forever</div>
+    </section>
+
+    <section class=" font-inter max-w-3xl mx-auto">
+        <h2 class="mb-2 text-4xl font-bold">Belajar Memaafkan Panda dan Menyayangi Panda</h2>
+        <div class="mb-4 text-lg text-gray-400">By <a class="text-gray-800">Jelly Jelly</a> , 12 Maret 2022</div>
+        <p class="mb-4">Sabarlah kamu seorang terhadap yang lain, dan ampunilah seorang akan yang lain apabila yang seorang menaruh dendam terhadap yang lain, sama seperti Tuhan telah mengampuni kamu, kamu perbuat jugalah demikian. Dan di atas semuanya itu: kenakanlah kasih, sebagai pengikat yang mempersatukan dan menyempurnakan.
+         </p>
+    <blockquote class="mb-4 italic font-thin text-xl">" Bearing with one another and, if one has a complaint against another, forgiving each other; as the Lord has forgiven you, so you also must forgive. And above all these things put on charity, which is the bond of perfectness."</blockquote>
+        <p class="mb-4 text-2xl">Kolose 3 : 13-14 | Colossians 3:13-14</p>
+    </section>
+    <div class="max-w-xl h-96 bg-[#bada55] mx-auto mt-[42px] overflow-y-scroll bg-fixed" style="background-image:url('https://source.unsplash.com/1000x600?love')">
+        <p class="p-5 text-2xl"></div>
+    <div class="mt-32 max-w-xl mx-auto h-96 bg-blue-300 bg-contain bg-no-repeat bg-center rounded-2xl shadow-2xl shadow-slate-500 overflow-hidden 
+    border-8 flex" style="background-image: url(./img/11.jpg)">
+        <div class="w-[200px] h-[200px] bg-white/70 m-auto backdrop-blur-md rounded-full"></div>
+    </div>
+    <hr class="my-20">
+
+    <div class="flex justify-center">
+        <span class="text-sm text-slate-500 mr-2">Light</span>
+        <input type="checkbox" id="toogle" class="hidden">
+
+        <label for="toogle">
+      <div class="w-9 h-5 bg-slate-500 rounded-full cursor-pointer p-0.5">
+        <div class="w-4 h-4 bg-white rounded-full toogle-circle"></div>
+      </div>
+    </label>
+        <span class="text-sm text-slate-500 mr-2" &nbsp;&nbsp;&nbsp;>Dark</span>
+    </div>
+
+
+    <button class="my-10 bg-pink-500 px-5 py-2 rounded-lg text-white font-semibold font-inter block mx-auto hover:bg-sky-700 active:bg-sky-800
+  focus:ring focus:ring-sky-300 dark:bg-slate-300 dark:text-slate-800 dark:hover:text-slate-900
+  dark:hover:bg-slate-100">Love Jelly</button>
+
+    <div class="max-w-lg my-10 border border-slate-200 rounded-xl mx-auto p-5 shadow-md font-inter hover:bg-sky-500 group font-serif dark:hover:bg-slate-300">
+        <h5 class="font-bold text-slate-700 text-lg mb-3 group-hover:text-white dark:group-hover:text-slate-800">Barina's Plan</h5>
+        <p class="text-slate-600 group-hover:text-white selection:bg-lime-300
+  selection:text-slate-900 first-line:uppercase first-line:tracking-widest first-letter:text-7xl first-letter:float-left first-letter:mr-3 dark:group-hover:text-slate-800">Jelly harus pulang ke Jakarta dulu. terus nanti kita barengan long weekend dari jumat - minggu. kita bersama berdua seru-seruan pokoknya. Kita keliling Jakarta naik motor malem-malem. terus kalo laper, kita minggir beli jajan. pokoknya nanti kita harus happy happy bareng. I love you Jelly  &hearts;&hearts;&hearts;&hearts;&hearts;&hearts;&hearts;&hearts;&hearts;&hearts;&hearts;&hearts;&hearts;&hearts;&hearts;&hearts;&hearts;&hearts;&hearts;&hearts;&hearts;&hearts;&hearts;&hearts;&hearts;&hearts;&hearts;&hearts;&hearts;&hearts;&hearts;&hearts;</p>
+
+    </div>
+    <div class="max-w-lg border border-slate-200 rounded-xl mx-auto shadow-sm font-inter p-5">
+        <form action="">
+            <label for="email">
+      <span class="block font-semibold mb-1 text-slate-700 after:content-['*'] after:text-pink-500 after-ml-0.5">Email Barina</span>
+      <input type="email" id="email" placeholder="Input Your Email Here ..." class="px-3 py-2 border shadow rounded w-full block text-sm placeholder:text-slate-400 focus:outline-none focus:ring-1 focus:ring-sky-500 focus:border-sky-500
+      invalid:text-pink-700 
+      invalid:focus:ring-pink-700
+      invalid:focus:border-pink-700 peer">
+      <p class="text-sm m-1 text-pink-700 invisible peer-invalid:visible">Email tidak valid</p>
+    </label>
+        </form>
+    </div>
+
+    <hr class="my-20" />
+
+    <div class="w-40 h-40 bg-sky-500 mx-auto rounded-lg shadow-lg hover:rotate-180 hover:bg-pink-500 transition origin-top-left">❤️❤️❤️❤️❤️❤️❤️❤️❤️❤️❤️❤️❤️❤️❤️❤️❤️❤️❤️❤️❤️❤️❤️❤️❤️❤️❤️❤️❤️❤️❤️❤️❤️❤️❤️❤️❤️❤️❤️❤️❤️❤️</div>
+
+    <div class="w-40 h-40 mx-auto mt-20 group">
+        <div class="w-full h-full bg-sky-500 rounded lg shadow lg group-hover:rotate-180 origin-top-left transition duration-1000 delay-200">❤️❤️❤️❤️❤️❤️❤️❤️❤️❤️❤️❤️❤️❤️❤️❤️❤️❤️❤️❤️❤️❤️❤️❤️❤️❤️❤️❤️❤️❤️❤️❤️❤️❤️❤️❤️❤️❤️❤️❤️❤️❤️</div>
+    </div>
+
+    <div class="w-40 h-40 bg-pink-500 mx-auto rounded-lg shadow-lg mt-20 animate-goyang">❤️❤️❤️❤️❤️❤️❤️❤️❤️❤️❤️❤️❤️❤️❤️❤️❤️❤️❤️❤️❤️❤️❤️❤️❤️❤️❤️❤️❤️❤️❤️❤️❤️❤️❤️❤️❤️❤️❤️❤️❤️❤️</div>
+
+    <hr class="my-20 border-t-4">
+    <div class="container px-8 mx-auto">
+        <div class="border rounded-lg shadow-lg p-10 relative">
+            <div class="w-10 h-10 bg-sky-200 rounded-full flex fixed bottom-5 right-5"> <a href="#" class="text-2xl m-auto cursor-pointer">🔝</a></div>
+            <img src="img/11.jpg" alt="Keyboard" width="150" class="float-left mr-3">
+            <p>Kita bikin rencana ke pantai bareng yuk. ke pulau seribu atau kalo kita nanti kaya, kita ke bali, atau ke Nusa pedina, atau ke Labuan Bajo yuk. terus kita ke pantai, menikmati keindahan alam, sambil foto-foto, terus uwu2an hehehe. semangat untuk kaya, biar kalo liburan ga terlalu mikirin budget. SEMANGATT!!! Barina pasti SUKSES. Kita foto bentuk tangan love juga, biar banyak kenangan kita. momen-momen kita bersama indah. pokoknya Barina Forever, Barina Forever, and Barina Forever.</div>
+    </div>
+    <div class="container border rounded-lg shadow-lg p-10 mx-auto mt-20 columns-3">
+        <img src="https://source.unsplash.com/600x400?love" alt="Image" class="mb-4">
+        <img src="https://source.unsplash.com/600x400?love" alt="Image" class="mb-4">
+        <img src="https://source.unsplash.com/600x400?love" alt="Image" class="mb-4">
+        <img src="https://source.unsplash.com/600x400?love" alt="Image" class="mb-4">
+        <img src="https://source.unsplash.com/600x400?love" alt="Image" class="mb-4">
+        <img src="https://source.unsplash.com/600x400?love" alt="Image" class="mb-4">
+    </div>
+
+    <hr class="my-24 border-t-4">
+
+    <div class="container px-6 font-inter max-w-md mx-auto sm:max-w-xl md:max-w-5xl lg:flex lg:max-w-full lg:px-0">
+      <div class="lg:p-12 lg:flex-1">
+        <h3 class="text-4xl text-slate-800 font-bold sm:text-5xl md:text-6xl">Panda <span class="text-sky-500">Jelly</span> Selamanya</h3>
+        <img src="img/22.jpg" alt="Barina Forever" class="mt-4 rounded-xl shadow-xl sm:mt-6 sm:w-full sm:object-cover sm:object-center lg:hidden">
+        <h2 class="text-2xl font-semibold text-slate-800 mt-2 sm:mt-8 sm:text-4xl">Mari Kita Bersama Untuk Selamanya.</h2>
+        <p class="mt-2 text-slate-600 sm:mt-4 sm:text-xl">Temenin aku yuk. temenin aku sehari-hari dalam kegiatan ku. nemenin aku bangun, nemenin aku tidur, nemenin aku masak, nemenin aku makan, nemenin aku belanja, nemenin aku dalam suka, nemenin aku dalam duka, nemenin aku dalam canda, nemenin aku dalam tawa. <br>nemenin aku belajar menjadi dewasa dan sukses bersama. nemenin aku sampe selamanya.</p>
+        <div>
+            <a href="https://api.whatsapp.com/send/?phone=6282123699307" target="_blank" class="inline-block px-5 py-3 bg-green-500 text-white rounded-lg shadow-lg uppercase font-semibold tracking-wider text-sm sm:mt-6 sm:text-base">Temenin Aku</a>
+        </div>
+      </div>
+      <div class="hidden lg:flex lg:w-1/2">
+        <img src="img/22.jpg" alt="Keyboardku" class="object-cover object-center rounded-3xl">
+      </div>
+    </div>
+
+
+    <h2 class="mt-24 mb-10 text-center font-bold text-3xl text-slate-700">Barina Gallery</h2>
+
+    <div class="container mx-auto px-6 font-inter sm:flex sm:flex-wrap sm:gap-6 sm:justify-evenly">
+
+      <div class="rounded-md shadow-lg overflow-hidden mb-10 sm:w-64 md:w-80 sm:mb-0">
+        <img src="img/grid/11.jpg" alt="Image Caption" class="w-full">
+        
+      </div><<div class="rounded-md shadow-lg overflow-hidden mb-10 sm:w-64 md:w-80 sm:mb-0">
+        <img src="img/grid/20.jpg" alt="Image Caption" class="w-full">
+        
+      </div><div class="rounded-md shadow-lg overflow-hidden mb-10 sm:w-64 md:w-80 sm:mb-0">
+        <img src="img/grid/17.jpg" alt="Image Caption" class="w-full">
+        
+      </div>
+      <div class="rounded-md shadow-lg overflow-hidden mb-10 sm:w-64 md:w-80 sm:mb-0">
+        <img src="img/grid/14.jpg" alt="Image Caption" class="w-full">
+        
+      </div>
+      <div class="rounded-md shadow-lg overflow-hidden mb-10 sm:w-64 md:w-80 sm:mb-0">
+        <img src="img/grid/15.jpg" alt="Image Caption" class="w-full">
+        
+      </div>
+    </div>
+
+
+    <div class="mt-64 p-2 font-inter grid grid-cols-2 gap-2 md:grid-cols-4 md:p-4">
+      <div class="h-15 bg-blue-500 aspect-[4/3] rounded-lg md:aspect-[3/4] lg:aspect-[4/3] overflow-hidden group relative hover:scale-95 transition-all duration-700">
+        <div class="w-full h-full bg-[url('img/grid/12.png')] bg-cover bg-center absolute group-hover:scale-125 group-hover:rotate-12 transition-all duration-700"></div>
+      </div>
+      <div class="h-15 bg-blue-500 aspect-[4/3] rounded-lg md:aspect-[3/4] lg:aspect-[4/3] md:col-start-3  overflow-hidden group relative hover:scale-95 transition-all duration-700">
+        <div class="w-full h-full bg-[url('img/grid/21.jpg')] bg-cover bg-center absolute group-hover:scale-125 group-hover:rotate-12 transition-all duration-700"></div>
+      </div>
+      <div class="h-15 bg-blue-500 aspect-[4/3] rounded-lg md:aspect-[3/4] lg:aspect-[4/3]  overflow-hidden group relative hover:scale-95 transition-all duration-700">
+        <div class="w-full h-full bg-[url('img/grid/22.jpg')] bg-cover bg-center absolute group-hover:scale-125 group-hover:rotate-12 transition-all duration-700"></div>
+      </div>
+      <div class="h-15 bg-blue-500 aspect-[4/3] rounded-lg
+       md:aspect-[3/4] lg:aspect-[4/3]  overflow-hidden group relative hover:scale-95 transition-all duration-700">
+        <div class="w-full h-full bg-[url('img/grid/23.jpg')] bg-cover bg-center absolute group-hover:scale-125 group-hover:rotate-12 transition-all duration-700"></div>
+      </div>
+      <div class="h-15 bg-blue-500 aspect-[4/3] rounded-lg md:aspect-[3/4] lg:aspect-[4/3]  overflow-hidden group relative hover:scale-95 transition-all duration-700">
+        <div class="w-full h-full bg-[url('img/grid/25.jpg')] bg-cover bg-center absolute group-hover:scale-125 group-hover:rotate-12 transition-all duration-700"></div>
+      </div>
+      <div class="h-15 bg-blue-500 aspect-[4/3] rounded-lg md:aspect-[3/4] lg:aspect-[4/3] md:col-start-2  overflow-hidden group relative hover:scale-95 transition-all duration-700">
+        <div class="w-full h-full bg-[url('img/grid/24.jpg')] bg-cover bg-center absolute group-hover:scale-125 group-hover:rotate-12 transition-all duration-700"></div>
+      </div>
+      <div class="h-15 bg-blue-500 aspect-[4/3] rounded-lg md:aspect-[3/4] lg:aspect-[4/3] md:col-start-4  overflow-hidden group relative hover:scale-95 transition-all duration-700">
+        <div class="w-full h-full bg-[url('img/grid/26.jpg')] bg-cover bg-center absolute group-hover:scale-125 group-hover:rotate-12 transition-all duration-700"></div>
+      </div>
+      <div class="h-15 bg-blue-500 aspect-[4/3] rounded-lg md:aspect-[3/4] lg:aspect-[4/3]  overflow-hidden group relative hover:scale-95 transition-all duration-700">
+        <div class="w-full h-full bg-[url('img/grid/27.jpg')] bg-cover bg-center absolute group-hover:scale-125 group-hover:rotate-12 transition-all duration-700"></div>
+      </div>
+      <div class="h-15 bg-blue-500 aspect-[4/3] rounded-lg md:aspect-[3/4] lg:aspect-[4/3] md:col-start-3  overflow-hidden group relative hover:scale-95 transition-all duration-700">
+        <div class="w-full h-full bg-[url('img/grid/28.jpg')] bg-cover bg-center absolute group-hover:scale-125 group-hover:rotate-12 transition-all duration-700"></div>
+      </div>
+      <div class="h-15 bg-blue-500 aspect-[4/3] rounded-lg md:aspect-[3/4] lg:aspect-[4/3] md:col-start-3   overflow-hidden group relative hover:scale-95 transition-all duration-700">
+        <div class="w-full h-full bg-[url('img/grid/30.jpg')] bg-cover bg-center absolute group-hover:scale-125 group-hover:rotate-12 transition-all duration-700"></div>
+      </div>
+    </div>
+
+
+    <div class="mb-96"></div>
+
+    <script>
+        const checkbox = document.querySelector('#toogle')
+        const html = document.querySelector('html')
+
+        checkbox.addEventListener('click', function() {
+            checkbox.checked ? html.classList.add('dark') : html.classList.remove('dark')
+        })
+    </script>
+    </body>
+
+</html>
